@@ -1,0 +1,5 @@
+Python can be used for converting Docx File to a Text File using docx2txt and something will tell me that this rtext
+wotn be converted into plagiarism becoz the difference is not in images ahhahhaha loook
+it shouldnt be a plagiat. this tutorial we will learn how like you know how HTML form and PHP.
+You can upload any kind of file like images, videos, ZIP files, Microsoft Office documents, PDFs, as well as executables files and a wide range of other file types.
+function which takes in a docx file as parameter and then parse it to a text file. Microsoft Office documents, PDFs, as well as executables files and a wide range of other file types.
