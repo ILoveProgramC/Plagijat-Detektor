@@ -10,7 +10,7 @@ Ovaj program omogućava korisnicima da detektuju plagijat u tekstualnim dokument
 
 ## Opis programa
 
-Cilj ovog programa je detekcija plagijata, to jest detekcija velikog procenta sličnosti između 2 datoteke. Napomena: u pitanju su samo tekstualne datoteke. U samom programu je dodan prag koji ako se prekorači, datoteka će biti označena kao plagijat. Prag se može namjestiti od samog korisnika ali je po "defaultu" namješteno ako datoteka ima sličnost sa drugim datotekama preko 60%, biće označena kao plagijat. Takođe program provjerava sve tekstualne datoteke koje se nalaze u samom direktorijumu programa i poredi svaku takvu datoteku sa izabranom datotekom (datoteku koju je korisnik uzeo da provjerava). Ako ima više datoteka koje su slične izabranoj u grafičkom korisničkom pročelju će se ispisati nazivi takvih datoteka i procenat sličnosti. 
+Cilj ovog programa je detekcija plagijata, to jest detekcija velikog procenta sličnosti između 2 datoteke. Napomena: u pitanju su samo tekstualne datoteke. U samom programu je dodan prag koji ako se prekorači, datoteka će biti označena kao plagijat. Prag se može namjestiti od samog korisnika ali je po "defaultu" namješteno ako datoteka ima sličnost sa drugim datotekama preko 60%, biće označena kao plagijat. Takođe program provjerava sve tekstualne datoteke koje se nalaze u samom direktorijumu programa i poredi svaku takvu datoteku sa izabranom datotekom (datoteku koju je korisnik uzeo da provjerava). Ako ima više datoteka koje su slične izabranoj, u grafičkom korisničkom pročelju će se ispisati nazivi takvih datoteka i procenat sličnosti. 
 
 ## Funkcionalnost lagoritma
 
