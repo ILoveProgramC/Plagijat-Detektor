@@ -14,7 +14,7 @@ directory = os.path.dirname(os.path.realpath(__file__))
 for filename in os.listdir(directory):
     full_path = os.path.join(directory, filename)
 
-    # Provera da li datoteka ima ekstenziju .txt
+    # Provjera da li datoteka ima ekstenziju .txt
     if filename.endswith(".txt"):
         with open(full_path, 'r', encoding='utf-8', errors='ignore') as file:
             text = file.read()
