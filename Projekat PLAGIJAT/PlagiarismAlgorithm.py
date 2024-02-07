@@ -1,15 +1,12 @@
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import word_tokenize, sent_tokenize
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import os
 
-# Globalna promenljiva koja označava da li je provjera završena
-done = False
-
-
 def check_plagiarism(filepath, result_label, progress_bar):
-    global done  # Koristimo globalnu promenljivu done
+    global done  # Globalna promjenljiva done koja označava da se provjera završila
+    done = False
 
     # Učitavanje teksta iz datoteke
     with open(filepath, 'r', encoding='utf-8', errors='ignore') as file:
@@ -41,15 +38,21 @@ def check_plagiarism(filepath, result_label, progress_bar):
             if len(word_tokenize(text.lower())) < 20:
                 continue
 
+            # Bolje čišćenje teksta: Uklanjanje nepotrebnih znakova i bjelina
+            text_cleaned = ' '.join(word_tokenize(text.lower()))
+
             # Dodavanje teksta i imena datoteke u liste
-            documents.append(text)
+            documents.append(text_cleaned)
             filenames.append(filename)
 
     # Kodiranje svih dokumenata
     embeddings = model.encode(documents)
 
+    # Promjena praga sličnosti
+    similarity_threshold = 0.6
+
     # Pronalaženje sličnih datoteka
-    similar_files = [(filenames[i], cosine_similarity([new_vec], [embeddings[i]])[0][0]) for i in range(len(documents)) if cosine_similarity([new_vec], [embeddings[i]])[0][0] > 0.6]
+    similar_files = [(filenames[i], cosine_similarity([new_vec], [embeddings[i]])[0][0]) for i in range(len(documents)) if cosine_similarity([new_vec], [embeddings[i]])[0][0] > similarity_threshold]
 
     # Zaustavljanje progress bara
     progress_bar.stop()
@@ -70,5 +73,5 @@ def check_plagiarism(filepath, result_label, progress_bar):
     result_label.tag_add("center", 1.0, "end")
     result_label.config(state='disabled')
 
-    # Postavljanje done na True da označimo da je provjera završena
+    # Postavljanje done na True da se oznaci da je provjera završena
     done = True
