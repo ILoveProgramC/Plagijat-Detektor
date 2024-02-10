@@ -1,2 +1,0 @@
-Uploading Files with PHP
-In this tutorial we will learn how to of other file types.
