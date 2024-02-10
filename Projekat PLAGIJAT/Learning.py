@@ -3,6 +3,8 @@ from nltk.tokenize import sent_tokenize
 from torch.utils.data import DataLoader
 import os
 
+""" Ovaj modul se koristi kao dodatak mašinskog učenja modela mBERT, ali i ne mora se koristiti jer je mBERT obučen na više od 100 jezika """
+
 # Učitavanje mBERT modela
 model = SentenceTransformer('distiluse-base-multilingual-cased-v2')
 
@@ -14,7 +16,7 @@ directory = os.path.dirname(os.path.realpath(__file__))
 for filename in os.listdir(directory):
     full_path = os.path.join(directory, filename)
 
-    # Provera da li datoteka ima ekstenziju .txt
+    # Provjera da li datoteka ima ekstenziju .txt
     if filename.endswith(".txt"):
         with open(full_path, 'r', encoding='utf-8', errors='ignore') as file:
             text = file.read()
