@@ -13,9 +13,9 @@ def update_status_label(status_label, window):
     Funkcija za ažuriranje statusne poruke tokom provere.
     """
     # Definisanje mogućih statusnih poruka
-    status_messages = ["Provjera u toku", "Ovo ce potrajati...", "Zavrsavam", "Uradite par sklekova...", "Popijte kafu...", "Provjeravam dokument",
-                       "Ovo bas traje dugo...", "Da li je svemir beskonacan ili ne?", "Da bi zaspali moramo se praviti da spavamo", "Da li slijepi ljudi vide u snovima?!",
-                       "Andrew Tate je izmisljen lik", "Ovaj program ne valja cim dugo ovo radi!", "Nadam se da cu proci ispit"]
+    status_messages = ["Provjera u toku", "Ovo će potrajati...", "Završavam", "Uradite par sklekova...", "Popijte kafu...", "Provjeravam dokument",
+                       "Ovo baš traje dugo...", "Da li je svemir beskonačan ili ne?", "Da bi zaspali moramo se praviti da spavamo", "Da li slijepi ljudi vide u snovima?!",
+                       "Andrew Tate je izmišljen lik", "Ovaj program ne valja cim dugo ovo radi!", "Nadam se da ću položiti", "Volim matematiku!"]
 
     # Prikazivanje prvih nekoliko poruka
     for i in range(2):
@@ -23,7 +23,7 @@ def update_status_label(status_label, window):
         window.update()
         time.sleep(2)
 
-    # Resetovanje promenljive done
+    # Resetovanje promjenljive done
     PlagiarismAlgorithm.done = False
 
     # Ažuriranje statusne poruke dok se provjera ne završi
@@ -40,7 +40,7 @@ def update_status_label(status_label, window):
 
 def select_file_and_check_plagiarism(progress_bar, status_label, result_label, window):
     """
-    Funkcija za izbor datoteke i pokretanje provere.
+    Funkcija za izbor datoteke i pokretanje provjere.
     """
     # Resetovanje promenljive done
     PlagiarismAlgorithm.done = False
