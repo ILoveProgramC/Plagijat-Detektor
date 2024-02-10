@@ -34,7 +34,7 @@ def check_plagiarism(filepath, result_label, progress_bar):
             with open(full_path, 'r', encoding='utf-8', errors='ignore') as file:
                 text = file.read()
 
-            # Preskakanje datoteka koje imaju manje od 20 reči
+            # Preskakanje datoteka koje imaju manje od 20 riječi
             if len(word_tokenize(text.lower())) < 20:
                 continue
 
@@ -73,5 +73,5 @@ def check_plagiarism(filepath, result_label, progress_bar):
     result_label.tag_add("center", 1.0, "end")
     result_label.config(state='disabled')
 
-    # Postavljanje done na True da se oznaci da je provjera završena
+    # Postavljanje done na True da se označi da je provjera završena
     done = True
