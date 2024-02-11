@@ -35,7 +35,7 @@ Klikom na dugme "IZABERI", korisnik može odabrati tekstualnu datoteku koju žel
 
 ### Provjera plagijata
 
-Nakon izbora datoteke, program će pokrenuti provjeru plagijata. Tokom ovog procesa, korisniku će biti prikazivane statusne poruke o toku provere. Po završetku provjere, program će prikazati rezultate u korisničkom pročelju, ukazujući na eventualne plagijate ili obaveštavajući da tekst nije pronađen kao plagijat.
+Nakon izbora datoteke, program će pokrenuti provjeru plagijata. Tokom ovog procesa, korisniku će biti prikazivane statusne poruke o toku provere. Po završetku provjere, program će prikazati rezultate u korisničkom pročelju, ukazujući na visoku sličnost (ili plagijat) ili obaveštavajući da tekst nije pronađen kao plagijat.
 
 ## Alatke korištene u programu
 
