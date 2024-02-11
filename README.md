@@ -4,7 +4,7 @@ Ovaj program omogućava korisnicima da detektuju plagijat u tekstualnim dokument
 
 1. **PlagiarismGUI**: Modul koji pruža grafičko korisničko pročelje za izbor datoteka i pokretanje provjere plagijata.
    
-2. **PlagiarismAlgorithm**: Modul koji sadrži logiku iza detekcije plagijata, koristeći NLTK za tokenizaciju reči, Sentence Transformers za kodiranje teksta i sklearn za izračunavanje kosinusne sličnosti.
+2. **PlagiarismAlgorithm**: Modul koji sadrži logiku iza detekcije plagijata, koristeći NLTK za tokenizaciju riječi, Sentence Transformers za kodiranje teksta i sklearn za izračunavanje kosinusne sličnosti.
 
 3. **Learning**: Modul koji se koristi za obuku modela nad svojim tekstovima (nije obavezan ali se može iskoristiti za jačanje same detekcije).
 
