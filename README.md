@@ -6,11 +6,11 @@ Ovaj program omogućava korisnicima da detektuju plagijat u tekstualnim dokument
    
 2. **PlagiarismAlgorithm**: Modul koji sadrži logiku iza detekcije plagijata, koristeći NLTK za tokenizaciju reči, Sentence Transformers za kodiranje teksta i sklearn za izračunavanje kosinusne sličnosti.
 
-3. **ModelTraining**: Modul koji se koristi za obuku modela nad svojim tekstovima (nije obavezan ali se može iskoristiti za jačanje same detekcije).
+3. **Learning**: Modul koji se koristi za obuku modela nad svojim tekstovima (nije obavezan ali se može iskoristiti za jačanje same detekcije).
 
 ## Opis programa
 
-Cilj ovog programa je detekcija plagijata, to jest detekcija velikog procenta sličnosti između izabrane datoteke i baze datoteka. Napomena: u pitanju su samo tekstualne datoteke. U samom programu je dodan prag koji ako se prekorači, datoteka će biti označena kao plagijat. Prag se može namjestiti od samog korisnika ali je po "defaultu" namješteno ako datoteka ima sličnost sa drugim datotekama preko 60%, biće označena kao plagijat. Takođe program provjerava sve tekstualne datoteke koje se nalaze u samom direktorijumu programa i poredi svaku takvu datoteku sa izabranom datotekom (datoteku koju je korisnik uzeo da provjerava). Ako ima više datoteka koje su slične izabranoj, u grafičkom korisničkom pročelju će se ispisati nazivi takvih datoteka i procenat sličnosti. Algoritam takođe primjećuje sličnosti između tekstova koji su napisani na raziličitom jeziku ali imaju ista značenja.
+Cilj ovog programa je detekcija plagijata, to jest detekcija velikog procenta sličnosti između izabrane datoteke i baze datoteka. Napomena: u pitanju su samo tekstualne datoteke. U samom programu je dodan prag koji ako se prekorači, datoteka će biti označena kao slična (ne mora nužno biti plagijat ali može imati veći procenat sličnosti). Prag se može namjestiti od samog korisnika ali je po "defaultu" namješteno ako datoteka ima sličnost sa drugim datotekama preko 60%, biće označena kao slična. Takođe program provjerava sve tekstualne datoteke koje se nalaze u samom direktorijumu programa i poredi svaku takvu datoteku sa izabranom datotekom (datoteku koju je korisnik uzeo da provjerava). Ako ima više datoteka koje su slične izabranoj, u grafičkom korisničkom pročelju će se ispisati nazivi takvih datoteka i procenat sličnosti. Algoritam takođe primjećuje sličnosti između tekstova koji su napisani na raziličitom jeziku ali imaju ista značenja.
 
 ## Funkcionalnost algoritma
 
@@ -44,6 +44,3 @@ Nakon izbora datoteke, program će pokrenuti provjeru plagijata. Tokom ovog proc
 - Sentence Transformers
 - scikit-learn
 
-
----
-*Napomena: Ovaj README fajl može biti ažuriran ili modifikovan kako bi se odražavale promene ili dodavale nove funkcionalnosti programa.*
