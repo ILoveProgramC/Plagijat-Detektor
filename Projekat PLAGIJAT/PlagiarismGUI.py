@@ -15,7 +15,7 @@ def update_status_label(status_label, window):
     # Definisanje mogućih statusnih poruka
     status_messages = ["Provjera u toku", "Ovo će potrajati...", "Završavam", "Uradite par sklekova...", "Popijte kafu...", "Provjeravam dokument",
                        "Ovo baš traje dugo...", "Da li je svemir beskonačan ili ne?", "Da bi zaspali moramo se praviti da spavamo", "Da li slijepi ljudi vide u snovima?!",
-                       "Andrew Tate je izmišljen lik", "Ovaj program ne valja cim dugo ovo radi!", "Nadam se da ću položiti", "Volim matematiku!"]
+                       "Andrew Tate je izmišljen lik", "Ovaj program ne valja čim dugo ovo radi!", "Nadam se da ću položiti", "Volim matematiku!", "What color is your buggati?"]
 
     # Prikazivanje prvih nekoliko poruka
     for i in range(2):
