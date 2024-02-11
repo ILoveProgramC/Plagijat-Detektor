@@ -92,7 +92,7 @@ def create_gui():
     title_label = Label(window, text="Plagijat Detektor", font=("Helvetica", 20), bg="lightblue")
     title_label.pack(pady=10)
 
-    description_label = Label(window, text="Dobrodošli u Plagijat Detektor. Ovaj detektor vrši poređenje između izabranog dokumenta i baze dokumenata. Ako procenat sličnosti premašuje prag od 60% tekst će biti označen kao plagijat. Kliknite na 'IZABERI' i izaberite željeni dokument.", font=("Helvetica", 14), wraplength=400)
+    description_label = Label(window, text="Dobrodošli u Plagijat Detektor. Ovaj detektor vrši poređenje između izabranog dokumenta i baze dokumenata. Ako procenat sličnosti premašuje prag od 60% tekst će biti označen kao sličan. Klikni na 'IZABERI' i izaberi željeni dokument.", font=("Helvetica", 14), wraplength=400)
     description_label.pack(pady=20)
 
     select_button = Button(window, text="IZABERI", command=lambda: select_file_and_check_plagiarism(progress_bar, status_label, result_label, window), bg="blue", fg="white", width=20, height=3, font=("Helvetica", 12, "bold"))
