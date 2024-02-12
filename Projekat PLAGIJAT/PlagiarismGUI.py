@@ -10,7 +10,7 @@ import PlagiarismAlgorithm
 
 def update_status_label(status_label, window):
     """
-    Funkcija za ažuriranje statusne poruke tokom provere.
+    Funkcija za ažuriranje statusne poruke tokom provjere.
     """
     # Definisanje mogućih statusnih poruka
     status_messages = ["Provjera u toku", "Ovo će potrajati...", "Završavam", "Uradite par sklekova...", "Popijte kafu...", "Provjeravam dokument",
